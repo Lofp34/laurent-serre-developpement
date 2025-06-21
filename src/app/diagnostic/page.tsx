@@ -1,9 +1,12 @@
-'use client';
-
+import { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-export default function DiagnosticPage() {
+// 'use client' marks this component as a Client Component.
+// All hooks like useRouter and useSearchParams must be in a Client Component.
+'use client';
+
+function DiagnosticRedirector() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -18,6 +21,17 @@ export default function DiagnosticPage() {
     router.replace(targetUrl);
   }, [searchParams, router]);
 
-  // Render a loading message while the redirect happens
+  // This message will be displayed briefly while the client-side redirection occurs.
   return <p>Redirection en cours...</p>;
+}
+
+// The page itself is a Server Component.
+export default function DiagnosticPage() {
+  return (
+    // The Suspense boundary is required by Next.js when a component uses useSearchParams.
+    // It allows the server to render a fallback UI while waiting for the client-side part.
+    <Suspense fallback={<p>Chargement de la page...</p>}>
+      <DiagnosticRedirector />
+    </Suspense>
+  );
 } 

@@ -1,20 +1,29 @@
-'use client';
-
+import { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-export default function BootcampPage() {
+// 'use client' marks this component as a Client Component.
+'use client';
+
+function BootcampRedirector() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   useEffect(() => {
     const queryString = searchParams.toString();
     const targetUrl = `/${queryString ? `?${queryString}` : ''}#bootcamp`;
-
-    // Redirect using Next.js's router for smoother client-side navigation
     router.replace(targetUrl);
-  }, [searchParams, router]);
+  }, [router, searchParams]);
 
-  // Render a loading message while the redirect happens
   return <p>Redirection en cours...</p>;
+}
+
+// The page itself is a Server Component.
+export default function BootcampPage() {
+  return (
+    // The Suspense boundary is required by Next.js.
+    <Suspense fallback={<p>Chargement de la page...</p>}>
+      <BootcampRedirector />
+    </Suspense>
+  );
 } 
