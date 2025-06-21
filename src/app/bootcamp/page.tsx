@@ -1,9 +1,8 @@
+'use client';
+
 import { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
-
-// 'use client' marks this component as a Client Component.
-'use client';
 
 function BootcampRedirector() {
   const router = useRouter();

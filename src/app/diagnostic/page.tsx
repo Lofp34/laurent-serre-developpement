@@ -1,10 +1,11 @@
+'use client';
+
 import { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 // 'use client' marks this component as a Client Component.
 // All hooks like useRouter and useSearchParams must be in a Client Component.
-'use client';
 
 function DiagnosticRedirector() {
   const router = useRouter();
@@ -19,7 +20,7 @@ function DiagnosticRedirector() {
 
     // Redirect using Next.js's router for smoother client-side navigation
     router.replace(targetUrl);
-  }, [searchParams, router]);
+  }, [router, searchParams]);
 
   // This message will be displayed briefly while the client-side redirection occurs.
   return <p>Redirection en cours...</p>;
