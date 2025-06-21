@@ -23,7 +23,7 @@ export default function AboutSection() {
                 <div className="w-full max-w-sm sm:max-w-md mx-auto aspect-square rounded-3xl overflow-hidden border-4 border-mint-green/30 shadow-2xl">
                   <Image
                     src="/laurentserre2.png" 
-                    alt="Laurent Serre - Consultant en développement commercial"
+                    alt="Portrait de Laurent Serre, expert en stratégie commerciale pour PME"
                     width={400}
                     height={400}
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
@@ -98,7 +98,7 @@ export default function AboutSection() {
                     <a href="https://www.linkedin.com/in/laurentserre34/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                       <Image
                         src="/linkedin-logo.png"
-                        alt="LinkedIn Laurent Serre"
+                        alt="Logo LinkedIn - Profil de Laurent Serre"
                         width={140}
                         height={40}
                         className="object-contain"
@@ -107,7 +107,7 @@ export default function AboutSection() {
                     <a href="https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                       <Image
                         src="/youtube-logo.png"
-                        alt="YouTube Laurent Serre"
+                        alt="Logo YouTube - Chaîne de Laurent Serre"
                         width={140}
                         height={40}
                         className="object-contain"

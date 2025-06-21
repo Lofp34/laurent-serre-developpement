@@ -250,10 +250,25 @@ export default function DiagnosticSection() {
                 </div>
               </div>
             </AnimatedSection>
+            
+            {/* CTA Psychologique */}
+            <div className="text-center mb-8 px-4">
+              <p className="text-sm font-body text-gray-anthracite dark:text-primary-bg/80 italic">
+                Votre situation est unique ? Allons droit au but.{" "}
+                <a 
+                  href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="font-bold text-mint-green underline hover:text-orange-soft transition"
+                >
+                  Échangeons 15 minutes pour un diagnostic sur-mesure.
+                </a>
+              </p>
+            </div>
 
             {/* Question */}
             <AnimatedSection animation="slide-up" delay={400}>
-              <div className="bg-white/90 dark:bg-gray-anthracite/40 rounded-3xl p-8 shadow-xl">
+              <div className="bg-white/90 dark:bg-gray-anthracite/40 rounded-3xl p-6 sm:p-8 shadow-xl">
                 <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 leading-relaxed">
                   {questions[currentQuestion].text}
                 </h3>

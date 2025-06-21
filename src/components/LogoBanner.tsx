@@ -25,6 +25,13 @@ export default function LogoBanner() {
   return (
     <section className="py-12 bg-white dark:bg-white border-y border-gray-200">
       <div className="max-w-6xl mx-auto px-6">
+        {/* Paragraphe contextuel */}
+        <div className="text-center mb-8">
+          <p className="text-base font-body text-gray-anthracite/90 max-w-4xl mx-auto">
+            J'accompagne des entreprises leaders dans des secteurs variés : <strong>conseil et expertise comptable</strong> (Audexcom, KPMG, Editions Lefebvre-Dalloz, SVP), <strong>services et logiciel</strong> (Septeo, Sequoia Soft, ESII), <strong>industrie</strong> (Teufelberger, IPO Technologies, SART von Rhor, Nidek, les Compagnons du Devoir), <strong>distribution</strong> (Bubimex, Seguret Décoration, Cafés Bibal) et <strong>santé</strong> (Mutualité Française, Groupe Demant, Fresenius Kabi).
+          </p>
+        </div>
+
         {/* Titre discret */}
         <div className="text-center mb-8">
           <p className="text-sm font-body text-gray-anthracite/70 font-italic">
@@ -54,7 +61,7 @@ export default function LogoBanner() {
                 >
                   <Image
                     src={logo.src}
-                    alt={`Logo ${logo.name}`}
+                    alt={`Logo de ${logo.name}, client de Laurent Serre Développement`}
                     fill
                     className="object-contain"
                     sizes="96px"
@@ -72,7 +79,7 @@ export default function LogoBanner() {
                 >
                   <Image
                     src={logo.src}
-                    alt={`Logo ${logo.name}`}
+                    alt={`Logo de ${logo.name}, client de Laurent Serre Développement`}
                     fill
                     className="object-contain"
                     sizes="96px"

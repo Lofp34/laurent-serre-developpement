@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/laurent.jpg"
-          alt="Laurent Serre - Expert en développement commercial"
+          alt="Photo de Laurent Serre, consultant et formateur en développement commercial"
           fill
           className="object-cover object-center"
           priority

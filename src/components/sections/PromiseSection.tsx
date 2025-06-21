@@ -141,9 +141,9 @@ export default function PromiseSection() {
                 {activePopup === index && (
                   <AnimatedSection animation="fade-in" delay={100}>
                     <div className="mt-6 p-6 bg-mint-green/5 border border-mint-green/20 rounded-2xl">
-                      <h4 className="font-title font-bold text-blue-ink dark:text-primary-bg text-lg mb-3">
+                      <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg text-lg mb-3">
                         {promise.popup.title}
-                      </h4>
+                      </h3>
                       <p className="font-body text-gray-anthracite dark:text-primary-bg/90 leading-relaxed mb-4">
                         {promise.popup.content}
                       </p>
