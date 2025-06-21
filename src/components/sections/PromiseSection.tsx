@@ -62,13 +62,13 @@ export default function PromiseSection() {
   };
 
   const handleMouseEnter = (index: number) => {
-    if (window.innerWidth >= 768) { // Desktop only
+    if (window.innerWidth >= 768) { // md breakpoint
       setActivePopup(index);
     }
   };
 
   const handleMouseLeave = () => {
-    if (window.innerWidth >= 768) { // Desktop only
+    if (window.innerWidth >= 768) { // md breakpoint
       setActivePopup(null);
     }
   };
@@ -104,7 +104,9 @@ export default function PromiseSection() {
             <AnimatedSection key={index} animation="slide-up" delay={200 + index * 100}>
               <div 
                 className="bg-white/90 dark:bg-gray-anthracite/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group cursor-pointer"
-                onClick={() => setActivePopup(activePopup === index ? null : index)}
+                onClick={() => handleCardClick(index)}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
               >
                 <div className="flex items-center gap-4 md:gap-6">
                   {/* Icône */}
