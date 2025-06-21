@@ -1,0 +1,19 @@
+import { redirect } from 'next/navigation';
+
+export default function BootcampPage({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
+  // Convert the searchParams object into a URL query string.
+  const queryString = new URLSearchParams(searchParams as Record<string, string>).toString();
+
+  // Construct the target URL, appending the query string if it exists.
+  const targetUrl = `/#offre${queryString ? `?${queryString}` : ''}`;
+
+  // Redirect to the target URL with the preserved parameters.
+  redirect(targetUrl);
+
+  // This part is unreachable but required for a valid component structure.
+  return null;
+} 
