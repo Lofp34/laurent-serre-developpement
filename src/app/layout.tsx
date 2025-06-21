@@ -24,14 +24,23 @@ export const metadata: Metadata = {
   authors: [{ name: "Laurent Serre" }],
   creator: "Laurent Serre",
   openGraph: {
-    title: "Laurent Serre Développement - Expert Commercial",
+    title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
+    url: "https://laurentserre.com",
     type: "website",
     locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Laurent Serre Développement - Expert Commercial & Formation",
+    description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: "https://laurentserre.com",
   },
 };
 
@@ -44,17 +53,6 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:title" content="Laurent Serre Développement - Expert Commercial" />
-        <meta property="og:description" content="De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales." />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://laurentserre.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Laurent Serre Développement - Expert Commercial" />
-        <meta name="twitter:description" content="De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales." />
-        <meta name="twitter:image" content="/og-image.jpg" />
-        <link rel="canonical" href="https://laurentserre.com" />
         <AnalyticsConsent />
       </head>
       <body

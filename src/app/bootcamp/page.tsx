@@ -8,8 +8,8 @@ export default function BootcampPage({
   // Convert the searchParams object into a URL query string.
   const queryString = new URLSearchParams(searchParams as Record<string, string>).toString();
 
-  // Construct the target URL, appending the query string if it exists.
-  const targetUrl = `/#offre${queryString ? `?${queryString}` : ''}`;
+  // Construct the target URL with the query string before the hash.
+  const targetUrl = `/${queryString ? `?${queryString}` : ''}#offre`;
 
   // Redirect to the target URL with the preserved parameters.
   redirect(targetUrl);
