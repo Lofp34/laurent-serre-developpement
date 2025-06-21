@@ -1,19 +1,19 @@
-import { redirect } from 'next/navigation';
+'use client';
 
-export default function BootcampPage({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
-  // Convert the searchParams object into a URL query string.
-  const queryString = new URLSearchParams(searchParams as Record<string, string>).toString();
+import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
 
-  // Construct the target URL with the query string before the hash.
-  const targetUrl = `/${queryString ? `?${queryString}` : ''}#offre`;
+export default function BootcampPage() {
+  const searchParams = useSearchParams();
 
-  // Redirect to the target URL with the preserved parameters.
-  redirect(targetUrl);
+  useEffect(() => {
+    const queryString = searchParams.toString();
+    const targetUrl = `/${queryString ? `?${queryString}` : ''}#bootcamp`;
 
-  // This part is unreachable but required for a valid component structure.
+    // Perform client-side redirection
+    window.location.href = targetUrl;
+  }, [searchParams]);
+
+  // Return a loading state or null while redirecting
   return null;
 } 

@@ -1,19 +1,22 @@
-import { redirect } from 'next/navigation';
+'use client';
 
-export default function DiagnosticPage({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
-  // Convert the searchParams object into a URL query string.
-  const queryString = new URLSearchParams(searchParams as Record<string, string>).toString();
+import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
 
-  // Construct the target URL with the query string before the hash.
-  const targetUrl = `/${queryString ? `?${queryString}` : ''}#diagnostic`;
+export default function DiagnosticPage() {
+  const searchParams = useSearchParams();
 
-  // Redirect to the target URL with the preserved parameters.
-  redirect(targetUrl);
+  useEffect(() => {
+    // Reconstruct the query string from the searchParams object.
+    const queryString = searchParams.toString();
 
-  // This part is unreachable but required for a valid component structure.
+    // Construct the target URL with the query string before the hash.
+    const targetUrl = `/${queryString ? `?${queryString}` : ''}#diagnostic`;
+
+    // Perform client-side redirection
+    window.location.href = targetUrl;
+  }, [searchParams]);
+
+  // Return a loading state or null while redirecting
   return null;
 } 
