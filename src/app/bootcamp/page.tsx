@@ -1,19 +1,20 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 export default function BootcampPage() {
+  const router = useRouter();
   const searchParams = useSearchParams();
 
   useEffect(() => {
     const queryString = searchParams.toString();
     const targetUrl = `/${queryString ? `?${queryString}` : ''}#bootcamp`;
 
-    // Perform client-side redirection
-    window.location.href = targetUrl;
-  }, [searchParams]);
+    // Redirect using Next.js's router for smoother client-side navigation
+    router.replace(targetUrl);
+  }, [searchParams, router]);
 
-  // Return a loading state or null while redirecting
-  return null;
+  // Render a loading message while the redirect happens
+  return <p>Redirection en cours...</p>;
 } 
