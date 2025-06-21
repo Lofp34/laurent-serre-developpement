@@ -30,9 +30,9 @@ export default function PromiseSection() {
       text: "Une équipe formée, structurée, et engagée",
       delay: "0.2s",
       popup: {
-        title: "Formation terrain + coaching individuel",
-        content: "Audit individuel (1h/commercial) + formation collective (4h) pour renforcer les compétences sur les entretiens de vente. Développement du mindset commercial avec coaching continu (2 sessions/personne) pour assurer la montée en compétence individuelle.",
-        highlights: ["Audit personnalisé", "Formation entretiens vente", "Mindset commercial", "Coaching 1-to-1"]
+        title: "Audit et structuration de votre force de vente",
+        content: "Nous débutons par un audit commercial de terrain pour évaluer la performance de votre force de vente. À partir de ce diagnostic, nous structurons une dynamique d'équipe et déployons une méthodologie de vente claire et partagée, conçue pour améliorer durablement votre performance commerciale.",
+        highlights: ["Audit commercial terrain", "Diagnostic des processus de vente", "Alignement de la force de vente", "Méthodologie de vente optimisée"]
       }
     },
     {

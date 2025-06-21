@@ -42,20 +42,17 @@ export default function AboutSection() {
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-2">
               <div className="space-y-4 sm:space-y-6">
                 <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
-                  Je forme, structure et accompagne les équipes de vente dans les PME depuis plus de{" "}
-                  <span className="font-bold text-mint-green">20 ans</span>.
+                  Depuis plus de 20 ans, ma mission est de transformer la performance commerciale des PME. 
+                  J&apos;interviens sur le terrain pour structurer, former et coacher votre force de vente, 
+                  en créant des processus clairs et une dynamique d&apos;équipe engagée.
                 </p>
-                
                 <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
-                  Mon approche est{" "}
-                  <span className="font-bold text-blue-ink dark:text-mint-green">directe</span>,{" "}
-                  <span className="font-bold text-blue-ink dark:text-mint-green">sans jargon</span>, et résolument tournée vers{" "}
-                  <span className="font-bold text-orange-soft">l&apos;action</span>.
+                  Mon approche est directe, sans jargon, et axée sur l&apos;action. 
+                  Je ne vends pas de théories, mais un accompagnement commercial pragmatique qui produit des résultats mesurables.
                 </p>
-                
                 <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
-                  Je combine les méthodes classiques les plus efficaces avec les outils modernes{" "}
-                  <span className="font-italic text-mint-green">(automatisation, IA, analyse)</span>.
+                  Je combine une méthodologie de vente éprouvée avec les outils modernes (IA, automatisation) 
+                  pour optimiser chaque étape de votre cycle de vente, de la prospection au closing.
                 </p>
               </div>
 
@@ -66,25 +63,25 @@ export default function AboutSection() {
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Formation terrain</span>
+                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Audit Commercial</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Accompagnement</span>
+                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Coaching d&apos;Équipe</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Outils modernes</span>
+                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Structuration des Ventes</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Résultats concrets</span>
+                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Performance Mesurable</span>
                   </div>
                 </div>
               </AnimatedSection>

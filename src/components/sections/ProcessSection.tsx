@@ -10,38 +10,38 @@ const ProcessSection = () => {
   const phases = [
     {
       icon: Target,
-      title: "Phase 1 - Audit individuel",
+      title: "Audit Commercial Individuel",
       duration: "1h par commercial",
-      description: "Point individuel pour auditer l'organisation, évaluer la méthodologie et diagnostiquer l'état d'esprit de chaque commercial.",
+      description: "Évaluation individuelle de l'organisation, de la méthodologie de vente et du mindset de chaque commercial pour identifier les premiers leviers de performance.",
       highlights: ["Gestion du temps et priorisation", "Structure d'entretien", "Mindset commercial"]
     },
     {
       icon: Users,
-      title: "Phase 2 - Audit collectif",
+      title: "Analyse des Pratiques Collectives",
       duration: "4h",
-      description: "Analyse des pratiques actuelles de prospection et décortiquage des entretiens de vente pour identifier les axes d'amélioration.",
+      description: "Analyse de la stratégie de prospection et des entretiens de vente pour identifier les points de friction et les opportunités d'amélioration pour toute la force de vente.",
       highlights: ["Pratiques de prospection", "Entretiens de vente", "Points de friction"]
     },
     {
       icon: Brain,
-      title: "Phase 3 - Structuration stratégique",
+      title: "Structuration & Outillage (Sales Playbook)",
       duration: "16h asynchrone",
-      description: "Création du Sales Playbook complet et mise en place de l'agent GPT d'autocoaching pour l'élévation continue.",
+      description: "Création de votre Sales Playbook sur-mesure et de l'agent IA d'auto-coaching pour outiller votre équipe avec une méthodologie de vente claire et des scripts performants.",
       highlights: ["Sales Playbook", "Agent GPT-IA", "Scripts optimisés"]
     },
     {
       icon: BarChart3,
-      title: "Phase 4 - Restitution stratégique",
+      title: "Déploiement du Plan d'Action",
       duration: "4h",
-      description: "Présentation du plan de vente finalisé et démonstration de l'agent GPT pour formaliser les plans d'action.",
+      description: "Présentation du plan d'action commercial finalisé et formation à l'agent IA pour garantir l'adoption des nouvelles pratiques par l'équipe.",
       highlights: ["Plan de vente", "Agent IA", "Plans d'action"]
     },
     {
       icon: TrendingUp,
-      title: "Phase 5 - Implémentation continue",
+      title: "Coaching de Performance Continue",
       duration: "2 sessions/pers.",
-      description: "Coaching individuel pour accompagner la mise en œuvre terrain et favoriser la montée en compétence.",
-      highlights: ["Mise en œuvre terrain", "Adaptation en temps réel", "Montée en compétence"]
+      description: "Accompagnement terrain par du coaching commercial individuel pour assurer l'implémentation, corriger les écarts et ancrer durablement la performance de l'équipe.",
+      highlights: ["Suivi des KPIs de vente", "Ancrage des compétences", "Amélioration continue"]
     }
   ];
 
@@ -81,9 +81,7 @@ const ProcessSection = () => {
             Notre processus unique
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Le Bootcamp Laurent Serre Développement : un programme révolutionnaire 
-            qui combine expertise humaine et intelligence artificielle pour transformer 
-            vos performances commerciales.
+            Le Bootcamp Laurent Serre Développement : une méthodologie complète qui combine expertise humaine et IA pour structurer et booster votre performance commerciale.
           </p>
         </motion.div>
 

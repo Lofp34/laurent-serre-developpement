@@ -45,10 +45,10 @@ export default function ProblemSection() {
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-title font-bold text-white">
-                  Effort sans résultat
+                  Prospection inefficace
                 </h3>
                 <p className="font-body text-white/90 leading-relaxed">
-                  Beaucoup d&apos;énergie dépensée, peu de résultats concrets.
+                  Votre force de vente passe des heures à prospecter, mais le portefeuille de nouvelles affaires peine à se remplir.
                 </p>
               </div>
             </div>
@@ -61,10 +61,10 @@ export default function ProblemSection() {
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-title font-bold text-white">
-                  Stress et frustration
+                  Cycle de vente épuisant
                 </h3>
                 <p className="font-body text-white/90 leading-relaxed">
-                  Une équipe qui se démène mais qui ne voit pas le fruit de ses efforts.
+                  Les cycles de vente s&apos;éternisent, les négociations sont difficiles, et le taux de closing stagne, créant de la frustration.
                 </p>
               </div>
             </div>
@@ -77,10 +77,10 @@ export default function ProblemSection() {
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-title font-bold text-white">
-                  Équipe sans cap
+                  Manque de prévisions fiables
                 </h3>
                 <p className="font-body text-white/90 leading-relaxed">
-                  Une équipe qui avance en roue libre, sans cap clair.
+                  Sans méthodologie de vente claire, il est impossible d&apos;avoir des prévisions de vente fiables et de piloter la croissance.
                 </p>
               </div>
             </div>

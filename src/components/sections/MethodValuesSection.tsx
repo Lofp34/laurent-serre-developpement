@@ -14,7 +14,7 @@ export default function MethodValuesSection() {
   const values = [
     {
       title: "Responsabilité",
-      description: "Je valorise les personnes qui prennent leur part. Qu'il s'agisse d'un dirigeant, d'un commercial ou de moi-même, chacun est responsable de la qualité de la relation et de la performance.",
+      description: "Je valorise les personnes qui prennent leur part. Qu'il s'agisse d'un dirigeant, d'un commercial ou de moi-même, chacun est responsable de la qualité de la relation et de la performance commerciale.",
       icon: "🤝",
       color: "mint-green"
     },
@@ -74,9 +74,9 @@ export default function MethodValuesSection() {
                 </div>
               </div>
               <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
-                J'aide les dirigeants de PME et leurs équipes commerciales à vendre mieux, plus humainement et plus efficacement, 
-                en combinant 20 ans de terrain avec la puissance des outils modernes (IA, automatisation, structuration). 
-                Je transforme leur chaos commercial en clarté d'action et en résultats concrets.
+                Ma mission est d&apos;améliorer la performance commerciale des PME en aidant leurs dirigeants et leurs équipes de vente à vendre mieux, 
+                plus humainement et plus efficacement, en combinant 20 ans de terrain avec la puissance des outils modernes (IA, automatisation, structuration). 
+                Je transforme leur chaos commercial en clarté d&apos;action et en résultats concrets.
               </p>
             </div>
           </AnimatedSection>
@@ -97,8 +97,8 @@ export default function MethodValuesSection() {
               </div>
               <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
                 Je veux réhabiliter le métier de commercial comme un métier noble, stratégique et profondément humain. 
-                Dans un monde saturé d'automatisation et de bullshit, je veux prouver qu'une approche rigoureuse, intelligente et sincère peut générer de la croissance durable. 
-                Mon objectif : créer la référence de la formation commerciale hybride, qui allie exigence, simplicité et outils augmentés.
+                Dans un monde saturé d&apos;automatisation et de bullshit, je veux prouver qu&apos;une approche rigoureuse, intelligente et sincère peut générer de la croissance durable. 
+                Mon objectif : créer la référence de l&apos;accompagnement commercial hybride, qui allie exigence, simplicité et outils augmentés.
               </p>
             </div>
           </AnimatedSection>

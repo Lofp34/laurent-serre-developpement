@@ -38,7 +38,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
               <span className="w-3 h-3 bg-mint-green rounded-full animate-pulse"></span>
               <span className="font-title font-semibold text-mint-green text-sm md:text-base">
-                20 ans d&apos;expertise • Formations sur-mesure
+                +20 ans d&apos;expertise • Accompagnement commercial sur-mesure
               </span>
             </div>
           </div>
@@ -52,15 +52,13 @@ export default function HeroSection() {
           {/* Sous-titre inspirant */}
           <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
-              Transformez votre force de vente en équipe{" "}
-              <span className="text-mint-green font-semibold">engagée</span>,{" "}
-              <span className="text-mint-green font-semibold">structurée</span> et{" "}
-              <span className="text-mint-green font-semibold">performante</span>.
+              Je structure votre force de vente pour en faire une équipe engagée, 
+              qui applique une méthodologie claire pour une performance commerciale durable.
             </p>
             
             <p className="text-base sm:text-lg md:text-xl font-italic text-white/90 leading-relaxed drop-shadow-sm px-2">
-              Avec 20 ans de terrain et les meilleurs outils d&apos;aujourd&apos;hui, je vous aide à vendre mieux, 
-              plus humainement, et durablement.
+              Mon approche, issue de 20 ans d&apos;expérience terrain et augmentée par l&apos;IA, 
+              est conçue pour améliorer votre performance commerciale, durablement.
             </p>
           </div>
 
