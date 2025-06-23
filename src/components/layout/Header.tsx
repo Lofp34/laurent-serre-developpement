@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Accueil", target: "top" },
   { label: "Offre", target: "offre" },
+  // { label: "Ressources", target: "ressources" },
   { label: "Diagnostic", target: "diagnostic" },
   { label: "Cas clients", target: "cas-clients" },
   { label: "Contact", target: "contact" },
