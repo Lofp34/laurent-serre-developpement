@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     // Ignore TypeScript errors during build
     ignoreBuildErrors: true,
   },
+  experimental: {
+    inlineCss: true,
+  },
   /* config options here */
 };
 
