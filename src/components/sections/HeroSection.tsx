@@ -19,6 +19,7 @@ export default function HeroSection() {
           src="/laurent.jpg"
           alt="Photo de Laurent Serre, consultant et formateur en développement commercial"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
