@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic';
 
 import HeroSection from "@/components/sections/HeroSection";
-import LogoBanner from "@/components/LogoBanner";
 
+const LogoBanner = dynamic(() => import('@/components/LogoBanner'));
 const ProblemSection = dynamic(() => import('@/components/sections/ProblemSection'));
 const PromiseSection = dynamic(() => import('@/components/sections/PromiseSection'));
 const ProcessSection = dynamic(() => import('@/components/sections/ProcessSection'));
