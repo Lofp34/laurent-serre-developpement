@@ -28,10 +28,10 @@ const config: Config = {
         foreground: 'var(--foreground)',
       },
       fontFamily: {
-        // Typographies de la charte
-        'title': ['Inter', 'Roboto Slab', 'serif'], // Titres : Inter Extra Bold ou Roboto Slab Bold
-        'body': ['Open Sans', 'sans-serif'],        // Texte courant : Open Sans Regular
-        'italic': ['Nunito', 'sans-serif'],        // Blocs encadrés : Nunito Italic
+        // Utilisation des variables CSS définies dans layout.tsx
+        'title': ['var(--font-inter)', 'var(--font-roboto-slab)', 'serif'],
+        'body': ['var(--font-open-sans)', 'sans-serif'],
+        'italic': ['var(--font-nunito)', 'sans-serif'],
       },
       borderWidth: {
         '3': '3px',
