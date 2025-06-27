@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useInView } from '@/hooks/useInView';
 
 // Types pour HubSpot
 interface HubSpotWindow extends Window {
@@ -32,7 +33,18 @@ export default function HubSpotForm({
   region = "na1",
   portalId = "7401198"
 }: HubSpotFormProps) {
+  const [formLoaded, setFormLoaded] = useState(false);
+  const { ref, isInView } = useInView({
+    triggerOnce: true, // Pour ne déclencher qu'une seule fois
+    threshold: 0.1, // Se déclenche quand 10% de l'élément est visible
+  });
+
   useEffect(() => {
+    // Ne rien faire si le formulaire est déjà chargé ou s'il n'est pas visible
+    if (formLoaded || !isInView) {
+      return;
+    }
+
     const windowWithHubSpot = window as HubSpotWindow;
     
     // Charger le script HubSpot si pas déjà chargé
@@ -42,6 +54,7 @@ export default function HubSpotForm({
       script.charset = 'utf-8';
       script.async = true;
       script.onload = () => {
+        setFormLoaded(true);
         // Créer le formulaire une fois le script chargé
         if (windowWithHubSpot.hbspt) {
           windowWithHubSpot.hbspt.forms.create({
@@ -65,6 +78,7 @@ export default function HubSpotForm({
       document.head.appendChild(script);
     } else if (windowWithHubSpot.hbspt) {
       // Si le script est déjà chargé, créer directement le formulaire
+      setFormLoaded(true);
       windowWithHubSpot.hbspt.forms.create({
         region: region,
         portalId: portalId,
@@ -72,11 +86,17 @@ export default function HubSpotForm({
         target: '#hubspot-form-container'
       });
     }
-  }, [formId, region, portalId]);
+  }, [isInView, formLoaded, formId, region, portalId]);
 
   return (
-    <div className="hubspot-form-wrapper">
-      <div id="hubspot-form-container"></div>
+    <div ref={ref} className="hubspot-form-wrapper">
+      {isInView ? (
+        <div id="hubspot-form-container"></div>
+      ) : (
+        <div style={{ height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {/* Placeholder pour garder la hauteur et éviter le décalage de mise en page */}
+        </div>
+      )}
       
       {/* CSS personnalisé pour matcher votre charte graphique */}
       <style jsx>{`
