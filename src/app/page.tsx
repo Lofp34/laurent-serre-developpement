@@ -1,14 +1,17 @@
+import dynamic from 'next/dynamic';
+
 import HeroSection from "@/components/sections/HeroSection";
-import ProblemSection from "@/components/sections/ProblemSection";
-import PromiseSection from "@/components/sections/PromiseSection";
-import ProcessSection from "@/components/sections/ProcessSection";
-import AboutSection from "@/components/sections/AboutSection";
-import TestimonialVideoSection from "@/components/sections/TestimonialVideoSection";
-// import ResourcesSection from "@/components/sections/ResourcesSection";
-import DiagnosticSection from "@/components/sections/DiagnosticSection";
 import LogoBanner from "@/components/LogoBanner";
-import MethodValuesSection from "@/components/sections/MethodValuesSection";
-import FinalCtaSection from "@/components/sections/FinalCtaSection";
+
+const ProblemSection = dynamic(() => import('@/components/sections/ProblemSection'));
+const PromiseSection = dynamic(() => import('@/components/sections/PromiseSection'));
+const ProcessSection = dynamic(() => import('@/components/sections/ProcessSection'));
+const AboutSection = dynamic(() => import('@/components/sections/AboutSection'));
+const MethodValuesSection = dynamic(() => import('@/components/sections/MethodValuesSection'));
+const TestimonialVideoSection = dynamic(() => import('@/components/sections/TestimonialVideoSection'));
+const DiagnosticSection = dynamic(() => import('@/components/sections/DiagnosticSection'));
+const FinalCtaSection = dynamic(() => import('@/components/sections/FinalCtaSection'));
+// const ResourcesSection = dynamic(() => import('@/components/sections/ResourcesSection'));
 
 export default function Home() {
   return (
