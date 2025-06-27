@@ -26,6 +26,7 @@ export default function AboutSection() {
                     alt="Portrait de Laurent Serre, expert en stratégie commerciale pour PME"
                     width={400}
                     height={400}
+                    sizes="(max-width: 640px) 384px, 448px"
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   />
                 </div>
