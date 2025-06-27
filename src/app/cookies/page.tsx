@@ -1,4 +1,8 @@
-import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Politique de Cookies - Laurent Serre Développement",
+};
 
 export default function PolitiqueCookies() {
   return (

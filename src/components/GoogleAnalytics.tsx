@@ -9,8 +9,8 @@ interface GoogleAnalyticsProps {
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
+    gtag: (...args: (string | Date | Record<string, unknown>)[]) => void;
+    dataLayer: (string | Date | Record<string, unknown>)[][];
   }
 }
 
@@ -21,8 +21,8 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
       window.dataLayer = window.dataLayer || [];
       
       // Fonction gtag
-      window.gtag = function() {
-        window.dataLayer.push(arguments);
+      window.gtag = function(...args: (string | Date | Record<string, unknown>)[]) {
+        window.dataLayer.push(args);
       };
       
       // Configuration initiale
@@ -46,7 +46,7 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
 }
 
 // Hook pour tracker des événements personnalisés
-export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
+export const trackEvent = (eventName: string, parameters?: Record<string, string | number | undefined>) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', eventName, {
       event_category: 'engagement',
