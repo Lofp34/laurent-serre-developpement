@@ -98,7 +98,7 @@ export default function FinalCtaSection() {
                 variant="secondary"
                 size="sm"
                 onClick={() => handleCtaClick('ressources_gratuites')}
-                className="bg-mint-green/10 hover:bg-mint-green/20 border-2 border-mint-green text-mint-green"
+                className="bg-mint-green text-white hover:bg-mint-green/90 shadow-lg"
               >
                 Télécharger les ressources
               </Button>

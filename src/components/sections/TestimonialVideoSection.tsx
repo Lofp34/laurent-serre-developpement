@@ -126,6 +126,32 @@ export default function TestimonialVideoSection() {
           </div>
         </AnimatedSection>
       </div>
+
+      <style jsx global>{`
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: #AAB8C2; /* Gris clair pour les non-actifs */
+          opacity: 0.8;
+          transition: all 0.3s ease;
+          margin: 0 8px !important; /* Ajoute de l'espace entre les points */
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #00BDA4; /* Couleur d'accentuation pour l'actif */
+          transform: scale(1.2);
+          opacity: 1;
+        }
+
+        /* Augmente la zone tactile sans changer la taille visuelle radicalement */
+        .swiper-pagination-bullet::before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          bottom: -10px;
+          left: -10px;
+          right: -10px;
+        }
+      `}</style>
     </section>
   );
 } 
