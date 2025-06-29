@@ -92,7 +92,7 @@ export default function AboutSection() {
                   <p className="font-title font-semibold text-gray-anthracite dark:text-primary-bg text-center md:text-left">
                     Retrouvez-moi sur :
                   </p>
-                  <div className="flex justify-center md:justify-start space-x-4 mt-4">
+                  <div className="flex items-center justify-center md:justify-start space-x-6 mt-4">
                     <a href="https://www.linkedin.com/in/laurentserre34/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                       <Image
                         src="/linkedin-logo.png"
