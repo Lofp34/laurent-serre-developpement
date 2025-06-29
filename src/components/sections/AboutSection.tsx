@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight">
             Laurent Serre –
-            <span className="block text-orange-soft">20 ans dans les bottes du commercial</span>
+            <span className="block text-amber-600 dark:text-orange-soft">20 ans dans les bottes du commercial</span>
           </h2>
         </div>
 

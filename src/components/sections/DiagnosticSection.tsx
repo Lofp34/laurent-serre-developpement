@@ -259,7 +259,7 @@ export default function DiagnosticSection() {
                   href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-bold text-mint-green underline hover:text-orange-soft transition"
+                  className="font-bold text-blue-ink dark:text-white border-b-2 border-mint-green hover:bg-mint-green/10 transition pb-1"
                 >
                   Échangeons 15 minutes pour un diagnostic sur-mesure.
                 </a>

@@ -15,7 +15,7 @@ export default function Footer() {
                 Laurent Serre Développement
               </h3>
               <div className="w-16 h-1 bg-mint-green rounded-full mb-4"></div>
-              <p className="font-body text-primary-bg/80 leading-relaxed">
+              <p className="font-body text-white leading-relaxed">
                 Transformez votre force de vente en équipe engagée, structurée et performante. 
                 Avec 20 ans d&apos;expérience terrain et les meilleurs outils d&apos;aujourd&apos;hui.
               </p>
@@ -53,27 +53,27 @@ export default function Footer() {
             <nav>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="font-body text-primary-bg/80 hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Accueil
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-primary-bg/80 hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Offre
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-primary-bg/80 hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Diagnostic
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-primary-bg/80 hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Cas clients
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-primary-bg/80 hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Contact
                   </a>
                 </li>
@@ -88,7 +88,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <span className="text-lg mt-1">📧</span>
                 <div>
-                  <p className="font-body text-primary-bg/80 text-sm">Email</p>
+                  <p className="font-body text-white text-sm">Email</p>
                   <a href="mailto:ls@laurentserre.com" className="font-body text-primary-bg hover:text-mint-green transition-colors">
                     ls@laurentserre.com
                   </a>
@@ -98,7 +98,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <span className="text-lg mt-1">📞</span>
                 <div>
-                  <p className="font-body text-primary-bg/80 text-sm">Téléphone</p>
+                  <p className="font-body text-white text-sm">Téléphone</p>
                   <a href="tel:+33614944060" className="font-body text-primary-bg hover:text-mint-green transition-colors">
                     +33 6 14 94 40 60
                   </a>
@@ -108,8 +108,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <span className="text-lg mt-1">📍</span>
                 <div>
-                  <p className="font-body text-primary-bg/80 text-sm">Zone d&apos;intervention</p>
-                  <div className="flex items-center gap-2 text-sm text-gray-anthracite dark:text-primary-bg/70">
+                  <p className="font-body text-white text-sm">Zone d&apos;intervention</p>
+                  <div className="flex items-center gap-2 text-sm text-white">
                     <span>📍</span>
                     <span>Basé en France • Interventions nationales et internationales</span>
                   </div>
@@ -125,22 +125,22 @@ export default function Footer() {
         {/* Mentions légales et copyright */}
         <div className="py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <p className="font-body text-primary-bg/70 text-sm">
+            <p className="font-body text-white text-sm">
               © {currentYear} Laurent Serre Développement. Tous droits réservés.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
-            <a href="/mentions-legales" className="font-body text-primary-bg/70 hover:text-mint-green text-sm transition-colors">
+            <a href="/mentions-legales" className="font-body text-white hover:text-mint-green text-sm transition-colors">
               Mentions légales
             </a>
-            <a href="/cgv" className="font-body text-primary-bg/70 hover:text-mint-green text-sm transition-colors">
+            <a href="/cgv" className="font-body text-white hover:text-mint-green text-sm transition-colors">
               CGV
             </a>
-            <a href="/politique-de-confidentialite" className="font-body text-primary-bg/70 hover:text-mint-green text-sm transition-colors">
+            <a href="/politique-de-confidentialite" className="font-body text-white hover:text-mint-green text-sm transition-colors">
               Politique de confidentialité
             </a>
-            <a href="/cookies" className="font-body text-primary-bg/70 hover:text-mint-green text-sm transition-colors">
+            <a href="/cookies" className="font-body text-white hover:text-mint-green text-sm transition-colors">
               Politique de cookies
             </a>
             <ManageCookiesButton />
@@ -151,7 +151,7 @@ export default function Footer() {
         <div className="pb-8 text-center">
           <div className="inline-flex items-center gap-2 bg-mint-green/10 px-4 py-2 rounded-full">
             <span className="text-mint-green">🏆</span>
-            <span className="font-body text-primary-bg/80 text-sm">
+            <span className="font-body text-white text-sm">
               Consultant certifié • 20 ans d&apos;expérience • +50 entreprises accompagnées
             </span>
           </div>
