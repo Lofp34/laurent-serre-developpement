@@ -27,14 +27,14 @@ export default function LogoBanner() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Paragraphe contextuel */}
         <div className="text-center mb-8">
-          <p className="text-base font-body text-gray-anthracite/90 max-w-4xl mx-auto">
+          <p className="text-base font-body text-gray-anthracite max-w-4xl mx-auto">
             J'accompagne des entreprises leaders dans des secteurs variés : <strong>conseil et expertise comptable</strong> (Audexcom, KPMG, Editions Lefebvre-Dalloz, SVP), <strong>services et logiciel</strong> (Septeo, Sequoia Soft, ESII), <strong>industrie</strong> (Teufelberger, IPO Technologies, SART von Rhor, Nidek, les Compagnons du Devoir), <strong>distribution</strong> (Bubimex, Seguret Décoration, Cafés Bibal) et <strong>santé</strong> (Mutualité Française, Groupe Demant, Fresenius Kabi).
           </p>
         </div>
 
         {/* Titre discret */}
         <div className="text-center mb-8">
-          <p className="text-sm font-body text-gray-anthracite/70 font-italic">
+          <p className="text-sm font-body text-gray-anthracite font-italic">
             Ils nous ont fait confiance
           </p>
         </div>
