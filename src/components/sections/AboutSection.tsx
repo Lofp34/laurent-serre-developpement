@@ -14,7 +14,7 @@ export default function AboutSection() {
         </div>
 
         {/* Contenu principal */}
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
           {/* Portrait */}
           <AnimatedSection animation="slide-left" delay={200}>
             <div className="order-1 lg:order-1">
