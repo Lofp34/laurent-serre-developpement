@@ -88,11 +88,11 @@ export default function AboutSection() {
               </AnimatedSection>
               {/* Social links */}
               <AnimatedSection animation="fade-in" delay={800}>
-                <div className="pt-6 sm:pt-8">
-                  <h4 className="font-title font-semibold text-gray-anthracite dark:text-primary-bg text-center mb-4">
+                <div className="mt-8">
+                  <p className="font-title font-semibold text-gray-anthracite dark:text-primary-bg text-center md:text-left">
                     Retrouvez-moi sur :
-                  </h4>
-                  <div className="flex justify-center items-center gap-6">
+                  </p>
+                  <div className="flex justify-center md:justify-start space-x-4 mt-4">
                     <a href="https://www.linkedin.com/in/laurentserre34/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                       <Image
                         src="/linkedin-logo.png"
